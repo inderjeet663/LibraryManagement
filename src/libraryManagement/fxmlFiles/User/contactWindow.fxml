@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="810.0" style="-fx-background-color: #252839;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libraryManagement.controllerClasses.User.ContactWindowController">
+    <children>
+        <Label fx:id="actionLbl" alignment="CENTER" layoutX="222.0" layoutY="14.0" prefHeight="50.0" prefWidth="366.0" text="Developer Detail" textFill="#f58c7f">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Label>
+        <Button fx:id="homeBtn" layoutX="608.0" layoutY="499.0" mnemonicParsing="false" onAction="#onHomeBtnClick" prefHeight="36.0" prefWidth="111.0" style="-fx-background-color: #cdf4d9;" text="Home">
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font>
+        </Button>
+        <Label layoutX="53.0" layoutY="96.0" text="Developer Name:" textFill="WHITE">
+            <font>
+                <Font name="Arial" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="129.0" layoutY="222.0" text="Email:" textFill="WHITE">
+            <font>
+                <Font name="Arial" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="96.0" layoutY="292.0" prefHeight="20.0" prefWidth="92.0" text="Whats App:" textFill="WHITE">
+            <font>
+                <Font name="Arial" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="105.0" layoutY="359.0" text="Facebook:" textFill="WHITE">
+            <font>
+                <Font name="Arial" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="113.0" layoutY="413.0" text="Git Hub:" textFill="WHITE">
+            <font>
+                <Font name="Arial" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="83.0" layoutY="155.0" text="Qualification:" textFill="WHITE">
+            <font>
+                <Font name="Arial" size="16.0" />
+            </font>
+        </Label>
+        <TextField editable="false" layoutX="201.0" layoutY="93.0" prefHeight="26.0" prefWidth="253.0" style="-fx-background-color: lightgreen; -fx-alignment: center;" text="Inderjeet Singh">
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font>
+        </TextField>
+        <TextField editable="false" layoutX="201.0" layoutY="152.0" prefHeight="26.0" prefWidth="253.0" style="-fx-background-color: lightgreen; -fx-alignment: center;" text="BCA+M.Sc(I.T)">
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font>
+        </TextField>
+        <TextField editable="false" layoutX="201.0" layoutY="219.0" prefHeight="26.0" prefWidth="253.0" style="-fx-background-color: lightgreen; -fx-alignment: center;" text="inderjeetsandhu702@gmail.com">
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font>
+        </TextField>
+        <TextField editable="false" layoutX="201.0" layoutY="289.0" prefHeight="26.0" prefWidth="253.0" style="-fx-background-color: lightgreen; -fx-alignment: center;" text="+919001000663">
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font>
+        </TextField>
+        <TextField editable="false" layoutX="201.0" layoutY="356.0" prefHeight="26.0" prefWidth="253.0" style="-fx-background-color: lightgreen; -fx-alignment: center;" text="www.facebook.com/i.singh.sandhu">
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font>
+        </TextField>
+        <TextField editable="false" layoutX="201.0" layoutY="410.0" prefHeight="26.0" prefWidth="253.0" style="-fx-background-color: lightgreen; -fx-alignment: center;" text="https://github.com/inderjeet663">
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font>
+        </TextField>
+        <Label layoutX="634.0" layoutY="86.0" prefHeight="20.0" prefWidth="59.0" text="PHOTO" textFill="WHITE">
+            <font>
+                <Font name="Arial" size="16.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="319.0" fitWidth="253.0" layoutX="542.0" layoutY="122.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/CYMERA_20160327_111241.jpg" />
+         </image></ImageView>
+    </children>
+</Pane>

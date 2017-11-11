@@ -1,0 +1,64 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="libraryManagement.Book" table="bookData">
+        <meta attribute="class-description">
+            This is a book class containing book related data
+        </meta>
+        <id name="id" column="id" type="integer">
+            <generator class="native"/>
+        </id>
+        <property name="isbn" column="isbn" type="string"/>
+        <property name="subject" column="subject" type="string"/>
+        <property name="name" column="name" type="string"/>
+        <property name="author" column="author" type="string"/>
+        <property name="publisher" column="publisher" type="string"/>
+        <property name="edition" column="edition" type="integer"/>
+        <property name="pages" column="pages" type="integer"/>
+        <property name="addDate" column="addDate" type="string"/>
+        <property name="shelf" column="shelf" type="integer"/>
+        <property name="copies" column="copies" type="integer"/>
+        <property name="language" column="language" type="string"/>
+        <property name="description" column="description" type="string"/>
+        <property name="photo" column="photo" type="binary"/>
+    </class>
+    <class name="libraryManagement.User" table="userData">
+        <meta attribute="class-description">
+            This is a normal user class contain Users data
+        </meta>
+        <id name="userId" column="userId" type="string"/>
+        <property name="firstName" column="firstName" type="string"/>
+        <property name="lastName" column="lastName" type="string"/>
+        <property name="DOB" column="DOB" type="string"/>
+        <property name="mobile" column="mobile" type="string"/>
+        <property name="email" column="email" type="string"/>
+        <property name="password" column="password" type="string"/>
+        <property name="photo" column="photo" type="binary"/>
+    </class>
+
+    <class name="libraryManagement.IssuedBooksRecord" table="issuedBookData">
+        <meta attribute="class-description">
+            Contains information about issued books
+        </meta>
+        <id name="id" column="id" type="integer">
+            <generator class="native"/>
+        </id>
+        <property name="userId" column="userId" type="string"/>
+        <property name="bookId" column="bookId" type="integer"/>
+        <property name="issuedDate" column="issuedDate" type="string"/>
+    </class>
+    <class name="libraryManagement.Admin" table="adminData">
+        <id name="id" type="integer">
+            <generator class="native"/>
+        </id>
+        <property name="password" column="password" type="string"/>
+        <property name="email" column="email" type="string"/>
+        <property name="name" column="name" type="string"/>
+        <property name="mobile" column="mobile" type="string"/>
+
+
+    </class>
+
+</hibernate-mapping>

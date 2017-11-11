@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#loadData" prefHeight="549.0" prefWidth="810.0" style="-fx-background-color: #252839;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libraryManagement.controllerClasses.Book.ViewAllBooksController">
+    <children>
+        <Label alignment="CENTER" layoutX="222.0" layoutY="14.0" prefHeight="50.0" prefWidth="366.0" text="All Books" textFill="#f58c7f">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Label>
+        <Button fx:id="homeBtn" layoutX="663.0" layoutY="499.0" mnemonicParsing="false" onAction="#onHomeBtnClick" prefHeight="36.0" prefWidth="111.0" style="-fx-background-color: #cdf4d9;" text="Home">
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font>
+        </Button>
+        <TableView fx:id="bookTable" layoutX="13.0" layoutY="77.0" prefHeight="407.0" prefWidth="777.0" style="-fx-background-color: #8fcde0; -fx-border-color: orange; -fx-border-width: 5;">
+            <columns>
+                <TableColumn fx:id="isbnClm" editable="false" prefWidth="60.0" text="ISBN" />
+                <TableColumn fx:id="nameClm" editable="false" prefWidth="192.99999237060547" text="Book Name" />
+                <TableColumn fx:id="subjectClm" editable="false" minWidth="0.0" prefWidth="94.0" text="Subject" />
+                <TableColumn fx:id="authorClm" editable="false" prefWidth="73.0" text="Author" />
+                <TableColumn fx:id="editionClm" editable="false" prefWidth="48.0" text="Edition" />
+                <TableColumn fx:id="shelfClm" editable="false" prefWidth="38.0" text="Shelf" />
+                <TableColumn fx:id="publisherClm" editable="false" prefWidth="103.0" text="Publisher" />
+                <TableColumn fx:id="addedDateClm" editable="false" minWidth="0.0" prefWidth="83.0" text="Added Date" />
+                <TableColumn fx:id="copiesClm" editable="false" prefWidth="84.0" style="-fx-font-weight:: bold;" text="Copies" />
+            </columns>
+        </TableView>
+    </children>
+</Pane>

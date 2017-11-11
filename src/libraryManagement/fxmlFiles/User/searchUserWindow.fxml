@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0"
+      prefWidth="810.0" style="-fx-background-color: #252839;" xmlns="http://javafx.com/javafx/8.0.141"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="libraryManagement.controllerClasses.User.SearchUserController">
+    <children>
+        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="188.0" layoutY="92.0" prefHeight="30.0"
+               prefWidth="111.0" text="Search User:" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold" size="16.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="222.0" layoutY="14.0" prefHeight="50.0" prefWidth="366.0" text="Manage User"
+               textFill="#f58c7f">
+            <font>
+                <Font size="32.0"/>
+            </font>
+        </Label>
+        <Button fx:id="searchBtn" layoutX="351.0" layoutY="207.0" mnemonicParsing="false" onAction="#onSearchBtnClick"
+                prefHeight="39.0" prefWidth="111.0" style="-fx-background-color: #cdd422;" text="Search">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Button>
+        <Button fx:id="homeBtn" layoutX="635.0" layoutY="497.0" mnemonicParsing="false" onAction="#onHomeBtnClick"
+                prefHeight="36.0" prefWidth="111.0" style="-fx-background-color: #cdf4d9;" text="Home">
+            <font>
+                <Font name="Arial Bold" size="14.0"/>
+            </font>
+        </Button>
+        <ToolBar layoutX="323.0" layoutY="87.0" prefHeight="40.0" prefWidth="164.0"
+                 style="-fx-background-color: #41e8f4; -fx-background-radius: 10;">
+            <items>
+                <RadioButton fx:id="idRadioBtn" mnemonicParsing="false" prefHeight="28.0" prefWidth="62.0"
+                             selected="true" text="ID">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                    <toggleGroup>
+                        <ToggleGroup fx:id="searchUserToggle"/>
+                    </toggleGroup>
+                </RadioButton>
+                <Separator orientation="VERTICAL" prefHeight="11.0" prefWidth="0.0"/>
+                <RadioButton fx:id="nameRadioBtn" mnemonicParsing="false" prefHeight="28.0" prefWidth="78.0" text="Name"
+                             toggleGroup="$searchUserToggle">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </RadioButton>
+            </items>
+        </ToolBar>
+        <TextField fx:id="searchTxtFld" layoutX="327.0" layoutY="145.0" prefHeight="30.0" prefWidth="156.0"/>
+        <Label fx:id="searchErrLbl" layoutX="329.0" layoutY="182.0" prefHeight="17.0" prefWidth="156.0"
+               textFill="#ff3232">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+        <TableView fx:id="searchTableView" editable="true" layoutX="11.0" layoutY="258.0" prefHeight="200.0"
+                   prefWidth="783.0">
+            <columns>
+                <TableColumn fx:id="idClm" prefWidth="58.00000762939453" text="ID"/>
+                <TableColumn fx:id="nameClm" prefWidth="138.0" text="Name"/>
+                <TableColumn fx:id="DOBClm" prefWidth="108.0" text="DOB"/>
+                <TableColumn fx:id="mobileClm" prefWidth="105.0" text="Mobile"/>
+                <TableColumn fx:id="emailClm" prefWidth="242.0" text="Email"/>
+                <TableColumn fx:id="actionClm" prefWidth="130.0" text="Action"/>
+            </columns>
+        </TableView>
+    </children>
+</Pane>
